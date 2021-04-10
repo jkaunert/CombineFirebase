@@ -27,7 +27,6 @@ let package = Package(
                 .product(name: "FirebaseRemoteConfig", package: "Firebase"),
                 .product(name: "FirebaseInAppMessaging-Beta", package: "Firebase"),
                 .product(name: "FirebaseMessaging", package: "Firebase"),
-                .product(name: "FirebaseFirestoreSwift", package: "Firebase"),
                 .product(name: "FirebaseFirestoreSwift-Beta", package: "Firebase"),
                 .product(name: "FirebaseStorageSwift-Beta", package: "Firebase"),
                 .product(name: "FirebaseFunctions", package: "Firebase"),
