@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "CombineFirebase",
+    platforms: [.iOS(.v13), .macOS(.v10_15), .tvOS(.v13)],
     products: [
         .library(
             name: "CombineFirebase",
@@ -12,7 +13,11 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/firebase/firebase-ios-sdk.git", from: "7.5.1")
+        .package(
+            name: "Firebase",
+            url: "https://github.com/firebase/firebase-ios-sdk.git",
+            .upToNextMajor(from: "7.5.1")
+        ),
     ],
     targets: [
         .target(
@@ -30,4 +35,3 @@ let package = Package(
         )
     ]
 )
-
