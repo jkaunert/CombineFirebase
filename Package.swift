@@ -18,7 +18,7 @@ let package = Package(
     targets: [
         .target(
             name: "CombineFirebase",
-            dependencies: ["Firebase",],
+            dependencies: [.product(package: "Firebase")],
             path: "Sources"
         ),
     ]
