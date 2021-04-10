@@ -18,7 +18,8 @@ let package = Package(
     targets: [
         .target(
             name: "CombineFirebase",
-            dependencies: [.product(name: "Firebase", package: "Firebase"),],
+            dependencies: [.package(name: "Firebase", url: "https://github.com/firebase/firebase-ios-sdk.git", from: "7.5.1"),
+                          ],
             path: "Sources"
         ),
     ]
