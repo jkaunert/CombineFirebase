@@ -28,7 +28,6 @@ let package = Package(
                 .product(name: "FirebaseMessaging", package: "Firebase"),
                 .product(name: "FirebaseFirestoreSwift-Beta", package: "Firebase"),
                 .product(name: "FirebaseStorageSwift-Beta", package: "Firebase"),
-                .product(name: "FirebaseFunctions", package: "Firebase"),
                 
             ],
             path: "Sources"
